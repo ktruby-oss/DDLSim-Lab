@@ -12,6 +12,7 @@
 
 <p align="center">
   <!-- Badges -->
+  <img alt="Research" src="https://img.shields.io/badge/Research-Active_Since_2025-blueviolet">
   <img alt="GitHub Repo stars" src="https://img.shields.io/badge/stars-5000%2B-brightgreen?logo=github">
   <img alt="GitHub forks" src="https://img.shields.io/badge/forks-5000%2B-brightgreen?logo=github">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-2ea44f?logo=open-source-initiative&logoColor=white">
@@ -37,7 +38,7 @@
 
 # **DDLSim-Lab**  
 ### Distributed Deep Learning Infrastructure Simulator  
-**Created by Kaitlyn Brishae Truby** | Contributed by many American universities  
+**Created by Kaitlyn Brishae Truby (Kaitlyn Truby)** | Contributed by many American universities  
 
 ---
 
@@ -124,9 +125,11 @@ We welcome contributions from researchers, engineers, and students worldwide! Wh
 - Implement novel scheduling algorithms  
 - Improve the observability pipeline  
 - Write tutorials or publish case studies  
-- Donate bare-metal hardware or cloud credits for community testbeds  
 
 Please read our [Contributing Guide](CONTRIBUTING.md) for details on submitting pull requests, reporting issues, and joining our discussions.  
+
+## 🏢 Call for Infrastructure Partners (Testbeds)  
+DDLSim-Lab is a fully open-source research platform available to any researcher, professor, or student worldwide. To advance this project and enable larger-scale experiments, we are actively seeking contributions of bare-metal servers, cloud computing credits, and advanced networking hardware. Your support directly accelerates AI systems research and helps the global scientific community. We welcome partnerships with testbeds, universities, and technology providers.  
 
 ## 🙏 Acknowledgments  
 This work is made possible by contributions from:  
@@ -135,12 +138,26 @@ This work is made possible by contributions from:
 - **Government agencies** that support open-source AI research initiatives  
 - **Open-source community** – Contributors of PyTorch, MPI4Py, Prometheus, Grafana, and related tools.  
 
+## 📝 Citation  
+If you use DDLSim-Lab in your research, please cite our project:  
+
+```bibtex
+@software{truby2025ddlsimlab,
+  author = {Truby, Kaitlyn Brishae},
+  title = {DDLSim-Lab: Open-Source Research Platform for Distributed Deep Learning Systems},
+  year = {2025},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/ktruby-oss/DDLSim-Lab}}
+}
+```
+
 ## 📜 License  
 DDLSim-Lab is licensed under the [MIT License](LICENSE).  
 
 ## 📫 Contact  
 For questions, collaborations, or media inquiries:  
-- **Project Lead**: Kaitlyn Brishae Truby  
+- **Project Lead**: Kaitlyn Brishae Truby (Kaitlyn Truby)  
 - **Email**: kaitlyn.truby@student.uagc.edu  
 
 > _"The best way to predict the future is to simulate it."_  
