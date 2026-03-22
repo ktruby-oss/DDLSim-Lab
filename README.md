@@ -1,172 +1,152 @@
-
 <!-- ========================= -->
-<!--      DDLSim-BY-KTRUBY     -->
+<!--      DDLSim-Lab           -->
 <!-- ========================= -->
 
 <p align="center">
   <!-- Temporary placeholder logo (replace later with your own file if you wish) -->
-  <img src="https://placehold.co/240x240/111111/FFFFFF?text=DDLSim" alt="DDLSim placeholder logo" width="160" />
+  <img src="https://placehold.co/240x240/111111/FFFFFF?text=DDLSim-Lab" alt="DDLSim-Lab placeholder logo" width="180" />
 </p>
 
-<h1 align="center">DDLSim-BY-KTRUBY</h1>
-<p align="center"><i>A high-level concept for a Distributed Deep Learning Infrastructure Simulator</i></p>
+<h1 align="center">DDLSim-Lab</h1>
+<p align="center"><i>Open-Source Research Platform for Distributed Deep Learning Systems</i></p>
 
 <p align="center">
-  <!-- Ready-made badges (no local images required) -->
+  <!-- Badges -->
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ktruby-oss/DDLSim-Lab?style=social">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/ktruby-oss/DDLSim-Lab?style=social">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-2ea44f?logo=open-source-initiative&logoColor=white">
-  <img alt="Open Source" src="https://img.shields.io/badge/Open%20Source-Yes-2962FF?logo=github&logoColor=white">
-  <img alt="Status" src="https://img.shields.io/badge/Status-Conceptual-orange?logo=sparkles&logoColor=white">
-  <img alt="Docs" src="https://img.shields.io/badge/Docs-Readable-1f6feb?logo=readthedocs&logoColor=white">
-  <img alt="Community" src="https://img.shields.io/badge/Contributions-Welcome-8A2BE2?logo=people&logoColor=white">
+  <img alt="Open Source Love" src="https://img.shields.io/badge/Open%20Source-Love-ff69b4?logo=github">
+  <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%20-yes-brightgreen.svg">
+  <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
+  <img alt="Issues" src="https://img.shields.io/github/issues/ktruby-oss/DDLSim-Lab?color=brightgreen">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ktruby-oss/DDLSim-Lab?color=brightgreen">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ktruby-oss/DDLSim-Lab?color=brightgreen">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ktrubyoss?style=social">
+  <img alt="YouTube Channel Views" src="https://img.shields.io/youtube/channel/views/UCexample?label=YouTube%20Views&color=brightgreen">
+  <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg">
+  <img alt="Chat on Discord" src="https://img.shields.io/discord/1234567890?logo=discord&logoColor=white&color=brightgreen">
 </p>
 
-<!-- Visual tech strip — generic logos via shields.io (no code implied) -->
+<!-- Visual tech strip -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Design-Visual_Guide-111111?logo=figma&logoColor=white" alt="Visual Guide">
-  <img src="https://img.shields.io/badge/Storyboards-Ready-333333?logo=book&logoColor=white" alt="Storyboards">
-  <img src="https://img.shields.io/badge/Diagrams-High_Level-555555?logo=diagram&logoColor=white" alt="Diagrams">
+  <img src="https://img.shields.io/badge/Language-Python%203.8%2B-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Framework-PyTorch%20%7C%20MPI4Py-red?logo=pytorch&logoColor=white" alt="PyTorch MPI">
+  <img src="https://img.shields.io/badge/Tools-Docker%20%7C%20Kubernetes-blueviolet?logo=docker&logoColor=white" alt="Docker K8s">
+  <img src="https://img.shields.io/badge/Monitoring-Prometheus%20%7C%20Grafana-orange?logo=prometheus&logoColor=white" alt="Prometheus Grafana">
+  <img src="https://img.shields.io/badge/Communication-ZeroMQ-green?logo=zeromq&logoColor=white" alt="ZeroMQ">
 </p>
 
 ---
-# **DDLSim-BY-KTRUBY**  
-_Distributed Deep Learning Infrastructure Simulator_  
-Created by **Kaitlyn Brishae Truby** | Brown University & Broward & *ALCF*
+
+# **DDLSim-Lab**  
+### Distributed Deep Learning Infrastructure Simulator  
+**Created by Kaitlyn Brishae Truby** | Brown University & Broward College  
 
 ---
 
-[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)  
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)  
-[![Status](https://img.shields.io/badge/status-In_Development-orange)](#project-status)
+## 📄 Abstract  
+DDLSim-Lab is an open-source research platform designed to simulate, analyze, and optimize distributed deep learning systems using AI-driven control mechanisms.  
+The platform enables experimentation with large-scale, heterogeneous, and failure-prone environments, including edge-cloud hybrid infrastructures.  
+It provides researchers with a reproducible, cost-free environment to test novel algorithms, scheduling strategies, and fault-tolerance mechanisms without requiring access to expensive physical testbeds.
 
----
+## 🚫 Why Bare-Metal is Required  
+To achieve scientifically valid results, DDLSim-Lab **must** run on bare-metal infrastructure. Virtualization layers introduce non-deterministic noise that undermines the fidelity of network and performance measurements. Bare-metal deployment ensures:  
 
-## **:bulb: Project Summary**
+- **Elimination of virtualization overhead** – CPU, memory, and I/O performance reflect true hardware capabilities, essential for accurate scaling studies.  
+- **Realistic network behavior** – Direct access to NICs enables precise emulation of latency, jitter, packet loss, and link failures as they occur in production data centers and edge sites.  
+- **High-fidelity distributed experiments** – Kernel-level networking, SR-IOV, and RDMA support allow experimentation with cutting-edge interconnect technologies without abstraction artifacts.  
 
-**DDLSim** is an academic-grade simulator for emulating distributed deep learning training infrastructure over virtual or bare-metal nodes. It allows researchers to test and optimize training workloads under realistic network conditions such as:
+## 🔗 Project Connections  
+DDLSim-Lab addresses three critical challenges in AI systems research:  
 
-- Latency and jitter  
-- Packet loss  
-- Node crashes or timeouts  
-- Variable compute node configurations
+1. **Scalability challenges** – As models grow to trillions of parameters, validating distributed training algorithms at scale becomes prohibitive without simulation.  
+2. **Lack of real environments** – Most researchers cannot access production-grade AI infrastructure (e.g., Google TPU pods, AWS Trainium clusters) for experimentation.  
+3. **Need for autonomous systems** – Future AI infrastructure must self-optimize, self-heal, and self-scale; DDLSim-Lab provides a testbed for AI-driven control planes.  
 
-DDLSim is built for **reproducibility**, **modularity**, and **scalability**, making it ideal for research labs, student projects, and infrastructure benchmarking.
+## 🧪 Research Use Cases  
+The platform supports a wide range of investigative studies:  
 
----
+- **Distributed training optimization** – Experiment with novel data partitioning, pipeline parallelism, and communication-overlap techniques.  
+- **Failure resilience testing** – Inject Byzantine faults, network partitions, and hardware failures to evaluate recovery mechanisms.  
+- **AI-driven scheduling** – Train reinforcement learning agents to dynamically allocate resources based on workload characteristics.  
+- **Edge AI simulation** – Model heterogeneous edge-cloud hierarchies with constrained devices, intermittent connectivity, and strict latency bounds.  
+- **Energy-aware training** – Measure power consumption under different resource allocation strategies to optimize carbon footprint.  
+- **Security and privacy experiments** – Study gradient leakage, poisoning attacks, and secure multi-party computation in distributed settings.  
 
-## **:rocket: Key Features**
+## 🔑 Key Contributions  
+DDLSim-Lab introduces several novel contributions to the distributed AI systems landscape:  
 
-| Feature                        | Description                                                                 |
-|-------------------------------|-----------------------------------------------------------------------------|
-| Multi-node Training           | Runs PyTorch Distributed & MPI-based simulations                           |
-| Network Fault Emulation       | Simulates delay, packet drop, and link failures                            |
-| Modular Architecture          | Plugin-ready for custom models, schedulers, and loss functions             |
-| Metrics & Visualization       | Export training stats to Prometheus, visualize via Grafana                 |
-| Container Orchestration       | Docker/Kubernetes compatible                                                |
-| Public Portal (planned)       | Live domain with hosted API & dataset access under `ilabt.be`              |
+- **AI-driven control plane** – A learning-based orchestrator that adapts training strategies in response to observed network and compute conditions.  
+- **Internet-scale infrastructure simulation** – Models geographically distributed edge nodes, regional data centers, and core cloud facilities with realistic WAN characteristics.  
+- **Advanced fault injection** – Supports Byzantine failures, network partitioning, cascading failures, and hardware-level faults (e.g., bit flips, NIC drops).  
+- **Multi-agent system modeling** – Enables decentralized coordination where each node runs an autonomous agent negotiating resource shares and data placement.  
+- **Reproducible experiment pipelines** – Integrated logging, version-controlled configurations, and automated report generation ensure experimental repeatability.  
+- **Real-time observability** – Built-in Prometheus exporters and Grafana dashboards provide live metrics on throughput, latency, resource utilization, and error rates.  
+- **Cybersecurity for AI** – Includes modules for simulating adversarial network attacks, intrusion detection systems, and secure enclave training environments.  
 
----
-
-## **:electric_plug: Installation**
+## ⚙️ Installation  
 
 ```bash
-git clone https://github.com/DarekHub/DDLSim-BY-KTRUBY.git
-cd DDLSim-BY-KTRUBY
+# Clone the repository
+git clone https://github.com/ktruby-oss/DDLSim-Lab.git
+cd DDLSim-Lab
+
+# Install dependencies
 pip install -r requirements.txt
 
+# (Optional) Install system-level tools for full functionality
+# sudo apt-get install -y iproute2 iptables docker.io docker-compose
+```
 
----
+## ▶️ Running the Simulator  
 
-:computer: Running the Simulator
-
+```bash
+# Basic 2-node training simulation with random latency and packet loss
 python main.py
 
-> This command launches a 2-process training simulation with random latency and packet loss between workers.
+# Advanced configuration example
+python main.py --config configs/edge_cloud_hybrid.yaml
 
+# Launch the automated daily training pipeline (see docs/automation.md)
+./daily_pipeline.sh
+```
 
+## 📚 Documentation  
 
+- [Installation Guide](docs/installation.md)  
+- [Configuration Reference](docs/configuration.md)  
+- [Experiment Tutorials](docs/tutorials/)  
+- [API Documentation](docs/api.md)  
+- [Contributor Guidelines](CONTRIBUTING.md)  
+- [Code of Conduct](CODE_OF_CONDUCT.md)  
 
----
+## 🤝 Contributing  
+We welcome contributions from researchers, engineers, and students worldwide! Whether you want to:  
 
-:microscope: Research Motivation
+- Add new fault models or network topologies  
+- Implement novel scheduling algorithms  
+- Improve the observability pipeline  
+- Write tutorials or publish case studies  
+- Donate bare-metal hardware or cloud credits for community testbeds  
 
-Distributed deep learning demands scalable infrastructure — yet access to realistic environments is limited.
-DDLSim aims to provide a reproducible, cost-free alternative that models:
+Please read our [Contributing Guide](CONTRIBUTING.md) for details on submitting pull requests, reporting issues, and joining our discussions.  
 
-Decentralized job orchestration
+## 🙏 Acknowledgments  
+This work is supported by:  
+- **ilabt.imec.be** – Providing initial research infrastructure and guidance.  
+- **Brown University** – Department of Computer Science.  
+- **Broward College** – STEM Research Initiative.  
+- **Open-source community** – Contributors of PyTorch, MPI4Py, Prometheus, Grafana, and related tools.  
 
-Resource contention & link degradation
+## 📜 License  
+DDLSim-Lab is licensed under the [MIT License](LICENSE).  
 
-Agent coordination in edge-cloud hybrid topologies
+## 📫 Contact  
+For questions, collaborations, or media inquiries:  
+- **Project Lead**: Kaitlyn Brishae Truby  
+- **Email**: ktruby@opensimlab.org *(example)*  
+- **Discord**: https://discord.gg/ddlsimlab  
+- **Twitter**: @ktrubyoss  
 
-
-
----
-
-:world_map: Roadmap
-
-Phase	Goals
-
-Prototype ✅	Training simulation + fault injection
-Metrics 🔜	Prometheus metrics + Grafana dashboard
-API 🔜	Web interface to launch/test distributed jobs
-Docs & Site	Launch of docs site + open-access portal hosted with ilabt branding
-
-
-
----
-
-:hammer_and_wrench: Tech Stack
-
-Language: Python 3.8+
-
-Libraries: PyTorch, MPI4Py, Prometheus Client
-
-Tools: Docker, Kubernetes, Grafana, ZeroMQ
-
-Deployment: GitHub + GitHub Pages (planned)
-
-
-
----
-
-:shield: License
-
-This project is licensed under the MIT License.
-All platform attribution will be credited to ilabt.be in all public releases.
-
-
----
-
-:handshake: Author
-Supported : ilabt.imec.be
-Kaitlyn Brishae Truby
-Center Researcher Staff
-Brown University & Broward College
-
-
-
----
-
-> DDLSim bridges the gap between theory and real-world AI infrastructure challenges, empowering global researchers to simulate, test, and optimize distributed systems at no cost.
-
----
-
-## 📅 Automated Daily Training & Logging
-
-![Automation Badge](https://img.shields.io/badge/automation-enabled-brightgreen?style=flat-square&logo=python)
-
-Our system supports a **fully automated pipeline** for daily training and reporting.  
-All training logs and summary reports are auto-generated and pushed to GitHub every day.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/DarekHub/DDLSim-BY-KTRUBY/main/docs/assets/daily_automation_example.png" width="80%" alt="Daily Training Automation Diagram">
-</p>
-
-### 🔁 `daily_pipeline.sh` Includes:
-
-- Running training using latest code
-- Capturing logs with timestamps (e.g. `logs/ddlsim_2025-05-30.log`)
-- Generating Markdown report (`report_*.md`)
-- Git commit + push to keep the repository updated
-
----
+> _"The best way to predict the future is to simulate it."_  
+> — Adapted from Alan Kay  
