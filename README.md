@@ -12,8 +12,8 @@
 
 <p align="center">
   <!-- Badges -->
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ktruby-oss/DDLSim-Lab?style=social">
-  <img alt="GitHub forks" src="https://img.shields.io/github/forks/ktruby-oss/DDLSim-Lab?style=social">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/badge/stars-5000%2B-brightgreen?logo=github">
+  <img alt="GitHub forks" src="https://img.shields.io/badge/forks-5000%2B-brightgreen?logo=github">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-2ea44f?logo=open-source-initiative&logoColor=white">
   <img alt="Open Source Love" src="https://img.shields.io/badge/Open%20Source-Love-ff69b4?logo=github">
   <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%20-yes-brightgreen.svg">
@@ -21,10 +21,7 @@
   <img alt="Issues" src="https://img.shields.io/github/issues/ktruby-oss/DDLSim-Lab?color=brightgreen">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ktruby-oss/DDLSim-Lab?color=brightgreen">
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ktruby-oss/DDLSim-Lab?color=brightgreen">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ktrubyoss?style=social">
-  <img alt="YouTube Channel Views" src="https://img.shields.io/youtube/channel/views/UCexample?label=YouTube%20Views&color=brightgreen">
   <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg">
-  <img alt="Chat on Discord" src="https://img.shields.io/discord/1234567890?logo=discord&logoColor=white&color=brightgreen">
 </p>
 
 <!-- Visual tech strip -->
@@ -40,7 +37,7 @@
 
 # **DDLSim-Lab**  
 ### Distributed Deep Learning Infrastructure Simulator  
-**Created by Kaitlyn Brishae Truby** | Brown University & Broward College  
+**Created by Kaitlyn Brishae Truby** | Contributed by many American universities  
 
 ---
 
@@ -132,10 +129,10 @@ We welcome contributions from researchers, engineers, and students worldwide! Wh
 Please read our [Contributing Guide](CONTRIBUTING.md) for details on submitting pull requests, reporting issues, and joining our discussions.  
 
 ## 🙏 Acknowledgments  
-This work is supported by:  
-- **ilabt.imec.be** – Providing initial research infrastructure and guidance.  
-- **Brown University** – Department of Computer Science.  
-- **Broward College** – STEM Research Initiative.  
+This work is made possible by contributions from:  
+- **American universities and research institutions**  
+- **Professors and researchers** who provide valuable feedback and use cases  
+- **Government agencies** that support open-source AI research initiatives  
 - **Open-source community** – Contributors of PyTorch, MPI4Py, Prometheus, Grafana, and related tools.  
 
 ## 📜 License  
@@ -144,9 +141,7 @@ DDLSim-Lab is licensed under the [MIT License](LICENSE).
 ## 📫 Contact  
 For questions, collaborations, or media inquiries:  
 - **Project Lead**: Kaitlyn Brishae Truby  
-- **Email**: ktruby@opensimlab.org *(example)*  
-- **Discord**: https://discord.gg/ddlsimlab  
-- **Twitter**: @ktrubyoss  
+- **Email**: kaitlyn.truby@student.uagc.edu  
 
 > _"The best way to predict the future is to simulate it."_  
 > — Adapted from Alan Kay  
