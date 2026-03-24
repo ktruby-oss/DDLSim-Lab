@@ -8,7 +8,7 @@
 </p>
 
 <h1 align="center">DDLSim-Lab</h1>
-<p align="center"><i>Open-Source Research Platform for Distributed Deep Learning Systems</i></p>
+<p align="center"><i>Distributed simulation environment using bare metal nodes</i></p>
 
 <p align="center">
   <!-- Badges -->
@@ -36,14 +36,14 @@
 
 ---
 
-# **DDLSim-Lab**  
-### Distributed Deep Learning Infrastructure Simulator  
+# **DDLSim-Lab**
+### Distributed Simulation Environment for Systems Research
 **Created by Kaitlyn Brishae Truby (Kaitlyn Truby)** | Contributed by many American universities  
 
 ---
 
 ## 📄 Abstract  
-DDLSim-Lab is an open-source research platform designed to simulate, analyze, and optimize distributed deep learning systems using AI-driven control mechanisms.  
+DDLSim-Lab is an open-source research project that provides a distributed simulation environment using bare metal nodes for performance evaluation of simulation workloads on cloud vs bare metal and scalable lab infrastructure for cybersecurity training.  
 The platform enables experimentation with large-scale, heterogeneous, and failure-prone environments, including edge-cloud hybrid infrastructures.  
 It provides researchers with a reproducible, cost-free environment to test novel algorithms, scheduling strategies, and fault-tolerance mechanisms without requiring access to expensive physical testbeds.
 
@@ -55,32 +55,36 @@ To achieve scientifically valid results, DDLSim-Lab **must** run on bare-metal i
 - **High-fidelity distributed experiments** – Kernel-level networking, SR-IOV, and RDMA support allow experimentation with cutting-edge interconnect technologies without abstraction artifacts.  
 
 ## 🔗 Project Connections  
-DDLSim-Lab addresses three critical challenges in AI systems research:  
+DDLSim-Lab addresses three critical challenges in systems research:  
 
-1. **Scalability challenges** – As models grow to trillions of parameters, validating distributed training algorithms at scale becomes prohibitive without simulation.  
-2. **Lack of real environments** – Most researchers cannot access production-grade AI infrastructure (e.g., Google TPU pods, AWS Trainium clusters) for experimentation.  
-3. **Need for autonomous systems** – Future AI infrastructure must self-optimize, self-heal, and self-scale; DDLSim-Lab provides a testbed for AI-driven control planes.  
+1. **Lack of bare-metal testbeds** – Access to bare-metal infrastructure for experiments is limited and expensive.  
+2. **Need for reproducible performance evaluation** – Comparing cloud vs bare metal requires controlled environments.  
+3. **Demand for cybersecurity training environments** – Scalable, isolated environments for hands-on security training.  
 
 ## 🧪 Research Use Cases  
 The platform supports a wide range of investigative studies:  
 
-- **Distributed training optimization** – Experiment with novel data partitioning, pipeline parallelism, and communication-overlap techniques.  
-- **Failure resilience testing** – Inject Byzantine faults, network partitions, and hardware failures to evaluate recovery mechanisms.  
-- **AI-driven scheduling** – Train reinforcement learning agents to dynamically allocate resources based on workload characteristics.  
-- **Edge AI simulation** – Model heterogeneous edge-cloud hierarchies with constrained devices, intermittent connectivity, and strict latency bounds.  
-- **Energy-aware training** – Measure power consumption under different resource allocation strategies to optimize carbon footprint.  
-- **Security and privacy experiments** – Study gradient leakage, poisoning attacks, and secure multi-party computation in distributed settings.  
+- **Bare-metal performance benchmarking** – Measure and compare hardware performance for various workloads.  
+- **Cloud vs bare metal comparison studies** – Evaluate trade-offs between cloud and bare metal for different applications.  
+- **Distributed systems protocol testing and validation** – Test consensus protocols, distributed databases, and middleware under controlled conditions.  
+- **Networking experiments (SDN, NFV, 5G, etc.)** – Simulate network functions, software-defined networking, and next-generation wireless networks.  
+- **Cybersecurity attack and defense training** – Create realistic training environments for red team/blue team exercises.  
+- **Kubernetes benchmarking and optimization** – Optimize container orchestration performance and resource utilization.  
+- **Container security and isolation studies** – Analyze container escape vulnerabilities and isolation mechanisms.  
+- **Edge computing simulation** – Model heterogeneous edge-cloud hierarchies with constrained devices and intermittent connectivity.  
+- **High-performance computing (HPC) workload evaluation** – Evaluate MPI applications, scientific simulations, and AI training workloads.  
 
 ## 🔑 Key Contributions  
-DDLSim-Lab introduces several novel contributions to the distributed AI systems landscape:  
+DDLSim-Lab introduces several novel contributions to the systems research landscape:  
 
-- **AI-driven control plane** – A learning-based orchestrator that adapts training strategies in response to observed network and compute conditions.  
-- **Internet-scale infrastructure simulation** – Models geographically distributed edge nodes, regional data centers, and core cloud facilities with realistic WAN characteristics.  
-- **Advanced fault injection** – Supports Byzantine failures, network partitioning, cascading failures, and hardware-level faults (e.g., bit flips, NIC drops).  
-- **Multi-agent system modeling** – Enables decentralized coordination where each node runs an autonomous agent negotiating resource shares and data placement.  
+- **Bare-metal simulation framework** – A lightweight, high-fidelity simulator for deploying and managing experiments on bare-metal infrastructure.  
+- **Cloud-bare metal comparison tools** – Automated tools for provisioning, configuring, and measuring performance across cloud and bare metal environments.  
+- **Network emulation engine** – Advanced network emulation capabilities for simulating WAN characteristics, packet loss, latency, and jitter.  
+- **Cybersecurity range generator** – Automated generation of isolated, scalable environments for cybersecurity training and experimentation.  
+- **Kubernetes benchmark suite** – Standardized benchmarks for evaluating Kubernetes performance under various workloads and configurations.  
 - **Reproducible experiment pipelines** – Integrated logging, version-controlled configurations, and automated report generation ensure experimental repeatability.  
 - **Real-time observability** – Built-in Prometheus exporters and Grafana dashboards provide live metrics on throughput, latency, resource utilization, and error rates.  
-- **Cybersecurity for AI** – Includes modules for simulating adversarial network attacks, intrusion detection systems, and secure enclave training environments.  
+- **Extensible architecture** – Modular design allows researchers to add new workloads, network models, and evaluation metrics.  
 
 ## ⚙️ Installation  
 
@@ -99,7 +103,7 @@ pip install -r requirements.txt
 ## ▶️ Running the Simulator  
 
 ```bash
-# Basic 2-node training simulation with random latency and packet loss
+# Basic 2-node networking simulation with random latency and packet loss
 python main.py
 
 # Advanced configuration example
@@ -121,21 +125,21 @@ python main.py --config configs/edge_cloud_hybrid.yaml
 ## 🤝 Contributing  
 We welcome contributions from researchers, engineers, and students worldwide! Whether you want to:  
 
-- Add new fault models or network topologies  
-- Implement novel scheduling algorithms  
+- Add new workload models or network topologies  
+- Implement novel benchmarking suites  
 - Improve the observability pipeline  
 - Write tutorials or publish case studies  
 
 Please read our [Contributing Guide](CONTRIBUTING.md) for details on submitting pull requests, reporting issues, and joining our discussions.  
 
 ## 🏢 Call for Infrastructure Partners (Testbeds)  
-DDLSim-Lab is a fully open-source research platform available to any researcher, professor, or student worldwide. To advance this project and enable larger-scale experiments, we are actively seeking contributions of bare-metal servers, cloud computing credits, and advanced networking hardware. Your support directly accelerates AI systems research and helps the global scientific community. We welcome partnerships with testbeds, universities, and technology providers.  
+DDLSim-Lab is a fully open-source research project available to any researcher, professor, or student worldwide. To advance this project and enable larger-scale experiments, we are actively seeking contributions of bare-metal servers, cloud computing credits, and advanced networking hardware. Your support directly accelerates systems research and helps the global scientific community. We welcome partnerships with testbeds, universities, and technology providers.  
 
 ## 🙏 Acknowledgments  
 This work is made possible by contributions from:  
 - **American universities and research institutions**  
 - **Professors and researchers** who provide valuable feedback and use cases  
-- **Government agencies** that support open-source AI research initiatives  
+- **Government agencies** that support open-source systems research initiatives  
 - **Open-source community** – Contributors of PyTorch, MPI4Py, Prometheus, Grafana, and related tools.  
 
 ## 📝 Citation  
@@ -144,7 +148,7 @@ If you use DDLSim-Lab in your research, please cite our project:
 ```bibtex
 @software{truby2025ddlsimlab,
   author = {Truby, Kaitlyn Brishae},
-  title = {DDLSim-Lab: Open-Source Research Platform for Distributed Deep Learning Systems},
+  title = {DDLSim-Lab: Distributed Simulation Environment using Bare Metal Nodes},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
