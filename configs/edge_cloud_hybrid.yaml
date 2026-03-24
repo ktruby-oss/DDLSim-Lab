@@ -1,0 +1,40 @@
+# DDLSim-Lab Configuration: Edge-Cloud Hybrid Environment
+simulation:
+  mode: "edge_cloud_hybrid"
+  duration_seconds: 3600
+
+network:
+  latency_ms_min: 10
+  latency_ms_max: 150
+  packet_loss_percent: 0.5
+  bandwidth_mbps: 1000
+
+nodes:
+  cloud_core:
+    count: 2
+    type: "bare_metal"
+    cpu_cores: 64
+    ram_gb: 256
+    gpu: "A100"
+  edge_tier_1:
+    count: 10
+    type: "bare_metal"
+    cpu_cores: 16
+    ram_gb: 64
+    gpu: "T4"
+  edge_tier_2:
+    count: 50
+    type: "resource_constrained"
+    cpu_cores: 4
+    ram_gb: 8
+
+workload:
+  type: "federated_learning"
+  model: "resnet50"
+  batch_size: 32
+  epochs: 100
+
+fault_injection:
+  enabled: true
+  byzantine_ratio: 0.1
+  node_failure_rate_per_hour: 0.05
