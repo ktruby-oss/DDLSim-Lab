@@ -42,12 +42,12 @@
 
 ---
 
-## 📄 Abstract  
+##  Abstract  
 DDLSim-Lab is an open-source research project that provides a distributed simulation environment using bare metal nodes for performance evaluation of simulation workloads on cloud vs bare metal and scalable lab infrastructure for cybersecurity training.  
 The platform enables experimentation with large-scale, heterogeneous, and failure-prone environments, including edge-cloud hybrid infrastructures.  
 It provides researchers with a reproducible, cost-free environment to test novel algorithms, scheduling strategies, and fault-tolerance mechanisms without requiring access to expensive physical testbeds.
 
-## 🚫 Why Bare-Metal is Required  
+##  Why Bare-Metal is Required  
 To achieve scientifically valid results, DDLSim-Lab **must** run on bare-metal infrastructure. Virtualization layers introduce non-deterministic noise that undermines the fidelity of network and performance measurements. Bare-metal deployment ensures:  
 
 - **Elimination of virtualization overhead** – CPU, memory, and I/O performance reflect true hardware capabilities, essential for accurate scaling studies.  
@@ -61,7 +61,7 @@ DDLSim-Lab addresses three critical challenges in systems research:
 2. **Need for reproducible performance evaluation** – Comparing cloud vs bare metal requires controlled environments.  
 3. **Demand for cybersecurity training environments** – Scalable, isolated environments for hands-on security training.  
 
-## 🧪 Research Use Cases  
+##  Research Use Cases  
 The platform supports a wide range of investigative studies:  
 
 - **Bare-metal performance benchmarking** – Measure and compare hardware performance for various workloads.  
@@ -86,7 +86,7 @@ DDLSim-Lab introduces several novel contributions to the systems research landsc
 - **Real-time observability** – Built-in Prometheus exporters and Grafana dashboards provide live metrics on throughput, latency, resource utilization, and error rates.  
 - **Extensible architecture** – Modular design allows researchers to add new workloads, network models, and evaluation metrics.  
 
-## ⚙️ Installation  
+##  Installation  
 
 ```bash
 # Clone the repository
@@ -100,7 +100,7 @@ pip install -r requirements.txt
 # sudo apt-get install -y iproute2 iptables docker.io docker-compose
 ```
 
-## ▶️ Running the Simulator  
+##  Running the Simulator  
 
 ```bash
 # Basic 2-node networking simulation with random latency and packet loss
