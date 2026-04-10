@@ -1,37 +1,76 @@
 {
-  "version": "1.1.0",
-  "project": {
-    "name": "DDLSim-Lab",
-    "description": "Autonomous Testbed for Deterministic Networking & eBPF Telemetry. Analyzing microsecond-level jitter in global Edge-Cloud continuums.",
-    "webpageUrl": "https://ktruby-oss.github.io/DDLSIM/",
-    "repositoryUrl": "https://github.com/ktruby-oss/DDLSim-Lab",
-    "license": "MIT"
-  },
-  "entities": [
-    {
-      "name": "Kaitlyn Brishae Truby",
-      "webpageUrl": "https://github.com/ktruby-oss",
-      "role": "Lead Principal Investigator",
-      "email": "kaitlyn.truby@student.uagc.edu"
+    "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+    "version": "v1.1.0",
+    "entity": {
+        "type": "individual",
+        "role": "owner",
+        "name": "Kaitlyn Brishae Truby",
+        "email": "kaitlyn.truby@student.uagc.edu",
+        "description": "Lead Researcher and Principal Investigator (PI) of DDLSim-Lab. Specializing in high-fidelity deterministic networking and eBPF-driven telemetry for Edge-Cloud continuums. Affiliated with the University of Arizona Global Campus (UAGC).",
+        "webpageUrl": {
+            "url": "https://github.com/ktruby-oss",
+            "wellKnown": ""
+        }
+    },
+    "projects": [{
+        "guid": "ddlsim-lab",
+        "name": "DDLSim-Lab",
+        "description": "An autonomous research testbed focusing on deterministic distributed latency simulation. The project utilizes eBPF and XDP to mitigate microsecond-level jitter in global networking infrastructures. Active since 2025.",
+        "webpageUrl": {
+            "url": "https://ktruby-oss.github.io/DDLSIM/"
+        },
+        "repositoryUrl": {
+            "url": "https://github.com/ktruby-oss/DDLSim-Lab",
+            "wellKnown": ""
+        },
+        "licenses": ["spdx:MIT"],
+        "tags": ["networking", "ebpf", "telemetry", "deterministic", "testbed", "xdp", "cloud-infrastructure"]
+    }],
+    "funding": {
+        "channels": [
+            {
+                "guid": "institutional-grant",
+                "type": "other",
+                "address": "kaitlyn.truby@student.uagc.edu",
+                "description": "Direct institutional grant or research sponsorship. Please contact via email for formal research collaboration and wire details."
+            },
+            {
+                "guid": "github-sponsors",
+                "type": "payment-provider",
+                "address": "https://github.com/sponsors/ktruby-oss",
+                "description": "Public community funding and individual sponsorships."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "testbed-build",
+                "status": "active",
+                "name": "Private Testbed Infrastructure Construction",
+                "description": "Procurement of specialized high-performance bare-metal hardware and network equipment for a dedicated project testbed.",
+                "amount": 10000,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": ["institutional-grant"]
+            },
+            {
+                "guid": "global-integration",
+                "status": "active",
+                "name": "International Testbed Integration",
+                "description": "Operational costs for bridging DDLSim-Lab with international research infrastructures (SPHERE, R2lab, GWDG) and managing telemetry egress.",
+                "amount": 5000,
+                "currency": "USD",
+                "frequency": "yearly",
+                "channels": ["institutional-grant", "github-sponsors"]
+            }
+        ],
+        "history": [
+            {
+                "year": 2025,
+                "income": 0,
+                "expenses": 1500,
+                "currency": "USD",
+                "description": "Project initiation, initial research documentation, and preliminary testing on open testbeds."
+            }
+        ]
     }
-  ],
-  "funding": {
-    "status": "active",
-    "funding_goals": [
-      {
-        "id": "testbed-2026",
-        "title": "DDLSim-Lab Private Testbed Construction",
-        "description": "Procurement of specialized high-performance bare-metal hardware and network equipment for dedicated project benchmarking.",
-        "amount": 10000,
-        "currency": "USD"
-      },
-      {
-        "id": "global-sync",
-        "title": "International Testbed Integration",
-        "description": "Operational costs for bridging DDLSim-Lab with global research infrastructures and managing high-bandwidth telemetry data.",
-        "amount": 5000,
-        "currency": "USD"
-      }
-    ]
-  }
 }
