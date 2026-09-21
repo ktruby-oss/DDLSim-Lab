@@ -2,7 +2,7 @@
     "$schema": "https://fundingjson.org/schema/v1.1.0.json",
     "version": "v1.1.0",
     "entity": {
-        "type": "individual",
+        "type": "research project ",
         "role": "maintainer",
         "name": "Kaitlyn Brishae Truby",
         "email": "kaitlyn.truby@keemail.me",
@@ -25,24 +25,16 @@
         },
         "licenses": ["spdx:MIT"],
         "tags": [
+            "bare-metal",
             "ebpf",
             "xdp",
-            "bare-metal",
             "networking",
             "deterministic-networking",
             "distributed-systems",
             "telemetry",
             "latency-benchmarking",
-            "kernel-bypass",
             "reproducibility-research",
-            "open-science",
-            "traffic-control",
-            "cloud-infrastructure",
-            "hypervisor-isolation",
-            "cybersecurity-testbed",
-            "high-performance-computing",
-            "zenodo-dataset",
-            "academic-research"
+            "open-science"
         ],
         "relatedUrls": [
             {
