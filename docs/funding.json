@@ -4,9 +4,9 @@
     "entity": {
         "type": "group",
         "role": "maintainer",
-        "name": "Kaitlyn Brishae Truby",
+        "name": "DDLSim-Lab Research Group",
         "email": "kaitlyn.truby@keemail.me",
-        "description": "Lead Systems Researcher and Principal Investigator (PI) of DDLSim-Lab. Specializing in bare-metal deterministic networking, kernel-level eBPF/XDP telemetry, microsecond latency profiling, and edge-cloud distributed computing architectures. Affiliated with the University of Arizona Global Campus (UAGC) and Lead Maintainer under Open Source Collective.",
+        "description": "An open-source systems research collective and laboratory specializing in bare-metal deterministic networking, kernel-level eBPF/XDP telemetry, and reproducibility testbeds. Led by Principal Investigator Kaitlyn Brishae Truby and hosted by Open Source Collective.",
         "webpageUrl": {
             "url": "https://ktruby-oss.github.io/DDLSIM/",
             "wellKnown": "https://ktruby-oss.github.io/.well-known/funding-manifest-urls"
@@ -32,9 +32,7 @@
             "deterministic-networking",
             "distributed-systems",
             "telemetry",
-            "latency-benchmarking",
-            "reproducibility-research",
-            "open-science"
+            "latency-benchmarking"
         ],
         "relatedUrls": [
             {
@@ -107,7 +105,7 @@
                 "channels": ["open-collective", "institutional-grant"]
             },
             {
-                "guid": "intl-testbed-integration",
+                "guid": "intl-testbed",
                 "status": "active",
                 "name": "International Testbed Integration & Telemetry Egress",
                 "description": "Annual operational budget to sustain experimental integrations across distributed testbeds (Grid'5000, COSMOS, R2lab), telemetry data curation, and open access dataset hosting.",
@@ -117,7 +115,7 @@
                 "channels": ["institutional-grant", "open-collective"]
             },
             {
-                "guid": "private-testbed-construction",
+                "guid": "dedicated-hardware",
                 "status": "active",
                 "name": "Dedicated Bare-Metal Testbed Hardware Procurement",
                 "description": "One-time capital expenditure for enterprise bare-metal compute servers, Mellanox ConnectX 25/100GbE NICs, and low-jitter deterministic network switching.",
@@ -127,7 +125,7 @@
                 "channels": ["institutional-grant", "open-collective"]
             },
             {
-                "guid": "institutional-research-partner",
+                "guid": "institutional-partner",
                 "status": "active",
                 "name": "Institutional & Enterprise Research Partnership",
                 "description": "Annual comprehensive research partnership: priority custom benchmark scenario modeling, dedicated kernel telemetry harnesses, and co-authored reproducibility validation reports.",
