@@ -9,7 +9,7 @@
         "description": "An open-source systems research collective and laboratory specializing in bare-metal deterministic networking, kernel-level eBPF/XDP telemetry, and reproducibility testbeds. Led by Principal Investigator Kaitlyn Brishae Truby and hosted by Open Source Collective.",
         "webpageUrl": {
             "url": "https://ktruby-oss.github.io/DDLSIM/",
-            "wellKnown": "https://ktruby-oss.github.io/.well-known/funding-manifest-urls"
+            "wellKnown": "https://github.com/ktruby-oss/DDLSim-Lab/blob/main/.well-known/funding-manifest-urls"
         }
     },
     "projects": [{
