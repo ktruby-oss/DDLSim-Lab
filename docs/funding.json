@@ -107,7 +107,7 @@
                 "channels": ["open-collective", "institutional-grant"]
             },
             {
-                "guid": "international-testbed-integration",
+                "guid": "intl-testbed-integration",
                 "status": "active",
                 "name": "International Testbed Integration & Telemetry Egress",
                 "description": "Annual operational budget to sustain experimental integrations across distributed testbeds (Grid'5000, COSMOS, R2lab), telemetry data curation, and open access dataset hosting.",
