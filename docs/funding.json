@@ -3,73 +3,166 @@
     "version": "v1.1.0",
     "entity": {
         "type": "individual",
-        "role": "owner",
+        "role": "maintainer",
         "name": "Kaitlyn Brishae Truby",
         "email": "kaitlyn.truby@keemail.me",
-        "description": "Lead Researcher and Principal Investigator (PI) of DDLSim-Lab. Specializing in high-fidelity deterministic networking and eBPF-driven telemetry for Edge-Cloud continuums. Affiliated with the University of Arizona Global Campus (UAGC).",
+        "description": "Lead Systems Researcher and Principal Investigator (PI) of DDLSim-Lab. Specializing in bare-metal deterministic networking, kernel-level eBPF/XDP telemetry, microsecond latency profiling, and edge-cloud distributed computing architectures. Affiliated with the University of Arizona Global Campus (UAGC) and Lead Maintainer under Open Source Collective.",
         "webpageUrl": {
             "url": "https://ktruby-oss.github.io/DDLSIM/",
-            "wellKnown": ""
+            "wellKnown": "https://ktruby-oss.github.io/.well-known/funding-manifest-urls"
         }
     },
     "projects": [{
         "guid": "ddlsim-lab",
         "name": "DDLSim-Lab",
-        "description": "An autonomous research testbed focusing on deterministic distributed latency simulation. The project utilizes eBPF and XDP to mitigate microsecond-level jitter in global networking infrastructures. Active since 2025.",
+        "description": "DDLSim-Lab is an open-source, bare-metal distributed simulation and deterministic benchmarking framework. Engineered to eliminate non-deterministic virtualization noise and hypervisor scheduling jitter, it provides microsecond-accurate network telemetry via native eBPF/XDP hooks, Linux Traffic Control (TC), and isolated kernel namespaces. Optimized for consensus protocols, distributed AI clusters, and cybersecurity resilience testbeds.",
         "webpageUrl": {
             "url": "https://ktruby-oss.github.io/DDLSIM/"
         },
         "repositoryUrl": {
             "url": "https://github.com/ktruby-oss/DDLSim-Lab",
-            "wellKnown": ""
+            "wellKnown": "https://github.com/ktruby-oss/DDLSim-Lab/blob/main/.well-known/funding-manifest-urls"
         },
         "licenses": ["spdx:MIT"],
-        "tags": ["networking", "ebpf", "telemetry", "deterministic", "testbed", "xdp", "cloud-infrastructure"]
+        "tags": [
+            "ebpf",
+            "xdp",
+            "bare-metal",
+            "networking",
+            "deterministic-networking",
+            "distributed-systems",
+            "telemetry",
+            "latency-benchmarking",
+            "kernel-bypass",
+            "reproducibility-research",
+            "open-science",
+            "traffic-control",
+            "cloud-infrastructure",
+            "hypervisor-isolation",
+            "cybersecurity-testbed",
+            "high-performance-computing",
+            "zenodo-dataset",
+            "academic-research"
+        ],
+        "relatedUrls": [
+            {
+                "type": "documentation",
+                "url": "https://ktruby-oss.github.io/DDLSIM/",
+                "description": "Official Technical Documentation and Scenario Architecture Guide"
+            },
+            {
+                "type": "publication",
+                "url": "https://www.academia.edu/165368850/DDLSim_Lab",
+                "description": "Foundational Research Paper and Architectural Methodology on Academia.edu"
+            },
+            {
+                "type": "publication",
+                "url": "https://independent.academia.edu/kaitlynTruby",
+                "description": "Principal Investigator Academic Profile on Academia.edu"
+            },
+            {
+                "type": "publication",
+                "url": "https://www.researchgate.net/profile/Kaitlyn-Truby",
+                "description": "Principal Investigator ResearchGate Profile for Scientific Citations"
+            },
+            {
+                "type": "dataset",
+                "url": "https://doi.org/10.5281/zenodo.19311889",
+                "description": "Permanent Research Dataset & Benchmark Telemetry Registry (Zenodo DOI)"
+            },
+            {
+                "type": "registry",
+                "url": "https://dir.floss.fund/view/projects/@github.com/ktruby-oss",
+                "description": "FLOSS/fund Open-Source Software Directory Listing"
+            },
+            {
+                "type": "other",
+                "url": "https://opencollective.com/ddlsim-lab",
+                "description": "Official Open Source Collective Non-Profit Fiscal Host Page"
+            }
+        ]
     }],
     "funding": {
+        "plans": [
+            {
+                "guid": "community-supporter",
+                "status": "active",
+                "name": "Open Source Community Backer",
+                "description": "Micro-contribution to support day-to-day open-source maintenance, community issue triage, and continuous integration runs.",
+                "amount": 10,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["open-collective", "github-sponsors"]
+            },
+            {
+                "guid": "baremetal-ci-runner",
+                "status": "active",
+                "name": "Bare-Metal CI/CD Hardware Node Sponsor",
+                "description": "Sponsorship allocated directly to provisioning dedicated physical bare-metal CI runner nodes for automated eBPF/XDP kernel regression tests.",
+                "amount": 150,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["open-collective", "github-sponsors"]
+            },
+            {
+                "guid": "kernel-ebpf-maintenance",
+                "status": "active",
+                "name": "Core Kernel & eBPF Telemetry Engineering",
+                "description": "Funding dedicated engineering hours for Linux kernel driver compatibility, safe capability separation (least privilege), and Prometheus exporter optimization.",
+                "amount": 1200,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["open-collective", "institutional-grant"]
+            },
+            {
+                "guid": "international-testbed-integration",
+                "status": "active",
+                "name": "International Testbed Integration & Telemetry Egress",
+                "description": "Annual operational budget to sustain experimental integrations across distributed testbeds (Grid'5000, COSMOS, R2lab), telemetry data curation, and open access dataset hosting.",
+                "amount": 5000,
+                "currency": "USD",
+                "frequency": "yearly",
+                "channels": ["institutional-grant", "open-collective"]
+            },
+            {
+                "guid": "private-testbed-construction",
+                "status": "active",
+                "name": "Dedicated Bare-Metal Testbed Hardware Procurement",
+                "description": "One-time capital expenditure for enterprise bare-metal compute servers, Mellanox ConnectX 25/100GbE NICs, and low-jitter deterministic network switching.",
+                "amount": 15000,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": ["institutional-grant", "open-collective"]
+            },
+            {
+                "guid": "institutional-research-partner",
+                "status": "active",
+                "name": "Institutional & Enterprise Research Partnership",
+                "description": "Annual comprehensive research partnership: priority custom benchmark scenario modeling, dedicated kernel telemetry harnesses, and co-authored reproducibility validation reports.",
+                "amount": 50000,
+                "currency": "USD",
+                "frequency": "yearly",
+                "channels": ["institutional-grant"]
+            }
+        ],
         "channels": [
             {
-                "guid": "institutional-grant",
-                "type": "other",
-                "address": "kaitlyn.truby@student.uagc.edu",
-                "description": "Direct institutional grant or research sponsorship. Please contact via email for formal research collaboration details."
+                "guid": "open-collective",
+                "type": "payment-provider",
+                "address": "https://opencollective.com/ddlsim-lab",
+                "description": "Public community funding, corporate backers, and tax-deductible contributions managed transparently through the Open Source Collective 501(c)(3) fiscal host."
             },
             {
                 "guid": "github-sponsors",
                 "type": "payment-provider",
                 "address": "https://github.com/sponsors/ktruby-oss",
-                "description": "Public community funding and individual sponsorships."
-            }
-        ],
-        "plans": [
-            {
-                "guid": "testbed-build",
-                "status": "active",
-                "name": "Private Testbed Infrastructure Construction",
-                "description": "Procurement of specialized high-performance bare-metal hardware and network equipment for a dedicated project testbed.",
-                "amount": 10000,
-                "currency": "USD",
-                "frequency": "one-time",
-                "channels": ["institutional-grant"]
+                "description": "GitHub Sponsors program for recurring individual and corporate sponsorship tiers directly integrated with our source repository."
             },
             {
-                "guid": "global-integration",
-                "status": "active",
-                "name": "International Testbed Integration",
-                "description": "Operational costs for bridging DDLSim-Lab with international research infrastructures (SPHERE, R2lab, GWDG) and managing telemetry egress.",
-                "amount": 5000,
-                "currency": "USD",
-                "frequency": "yearly",
-                "channels": ["institutional-grant", "github-sponsors"]
-            }
-        ],
-        "history": [
-            {
-                "year": 2025,
-                "income": 0,
-                "expenses": 1500,
-                "currency": "USD",
-                "description": "Project initiation, initial research documentation, and preliminary testing on open testbeds."
+                "guid": "institutional-grant",
+                "type": "other",
+                "address": "kaitlyn.truby@mail2scientist.com",
+                "description": "Direct institutional grants, academic research sponsorships, European fund disbursements, or agency contracts via verified scientist channel."
             }
         ]
     }
