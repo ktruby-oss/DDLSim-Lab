@@ -2,7 +2,7 @@
     "$schema": "https://fundingjson.org/schema/v1.1.0.json",
     "version": "v1.1.0",
     "entity": {
-        "type": "research project ",
+        "type": "group",
         "role": "maintainer",
         "name": "Kaitlyn Brishae Truby",
         "email": "kaitlyn.truby@keemail.me",
