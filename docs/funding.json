@@ -5,7 +5,7 @@
         "type": "group",
         "role": "maintainer",
         "name": "DDLSim-Lab Research Group",
-        "email": "kaitlyn.truby@keemail.me",
+        "email": "Kaitlyn.Truby@mail2scientist.com",
         "description": "An open-source systems research collective and laboratory specializing in bare-metal deterministic networking, kernel-level eBPF/XDP telemetry, and reproducibility testbeds. Led by Principal Investigator Kaitlyn Brishae Truby and hosted by Open Source Collective.",
         "webpageUrl": {
             "url": "https://ktruby-oss.github.io/DDLSIM/"
@@ -150,7 +150,7 @@
             {
                 "guid": "institutional-grant",
                 "type": "other",
-                "address": "kaitlyn.truby@mail2scientist.com",
+                "address": "kaitlyn.truby@keemail.me",
                 "description": "Direct institutional grants, academic research sponsorships, European fund disbursements, or agency contracts via verified scientist channel."
             }
         ]
