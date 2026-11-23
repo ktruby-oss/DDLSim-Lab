@@ -74,7 +74,7 @@ The platform supports a wide range of investigative studies:
 - **Edge computing simulation** – Model heterogeneous edge-cloud hierarchies with constrained devices and intermittent connectivity.  
 - **High-performance computing (HPC) workload evaluation** – Evaluate MPI applications, scientific simulations, and AI training workloads.  
 
-## 🔑 Key Contributions  
+##  Key Contributions  
 DDLSim-Lab introduces several novel contributions to the systems research landscape:  
 
 - **Bare-metal simulation framework** – A lightweight, high-fidelity simulator for deploying and managing experiments on bare-metal infrastructure.  
@@ -132,7 +132,7 @@ We welcome contributions from researchers, engineers, and students worldwide! Wh
 
 Please read our [Contributing Guide](CONTRIBUTING.md) for details on submitting pull requests, reporting issues, and joining our discussions.  
 
-## 🏢 Call for Infrastructure Partners (Testbeds)  
+##  Call for Infrastructure Partners (Testbeds)  
 DDLSim-Lab is a fully open-source research project available to any researcher, professor, or student worldwide. To advance this project and enable larger-scale experiments, we are actively seeking contributions of bare-metal servers, cloud computing credits, and advanced networking hardware. Your support directly accelerates systems research and helps the global scientific community. We welcome partnerships with testbeds, universities, and technology providers.  
 
 ## 🙏 Acknowledgments  
@@ -142,7 +142,7 @@ This work is made possible by contributions from:
 - **Government agencies** that support open-source systems research initiatives  
 - **Open-source community** – Contributors of PyTorch, MPI4Py, Prometheus, Grafana, and related tools.  
 
-## 📝 Citation  
+##  Citation  
 If you use DDLSim-Lab in your research, please cite our project:  
 
 ```bibtex
@@ -162,7 +162,7 @@ DDLSim-Lab is licensed under the [MIT License](LICENSE).
 ## 📫 Contact  
 For questions, collaborations, or media inquiries:  
 - **Project Lead**: Kaitlyn Brishae Truby (Kaitlyn Truby)  
-- **Email**: kaitlyn.truby@student.uagc.edu  
+- **Email**: Kaitlyn.Truby@mail2scientist.com 
 
 > _"The best way to predict the future is to simulate it."_  
 > — Adapted from Alan Kay  
