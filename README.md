@@ -54,7 +54,7 @@ To achieve scientifically valid results, DDLSim-Lab **must** run on bare-metal i
 - **Realistic network behavior** – Direct access to NICs enables precise emulation of latency, jitter, packet loss, and link failures as they occur in production data centers and edge sites.  
 - **High-fidelity distributed experiments** – Kernel-level networking, SR-IOV, and RDMA support allow experimentation with cutting-edge interconnect technologies without abstraction artifacts.  
 
-## 🔗 Project Connections  
+##  Project Connections  
 DDLSim-Lab addresses three critical challenges in systems research:  
 
 1. **Lack of bare-metal testbeds** – Access to bare-metal infrastructure for experiments is limited and expensive.  
@@ -113,7 +113,7 @@ python main.py --config configs/edge_cloud_hybrid.yaml
 ./daily_pipeline.sh
 ```
 
-## 📚 Documentation  
+##  Documentation  
 
 - [Installation Guide](docs/installation.md)  
 - [Configuration Reference](docs/configuration.md)  
@@ -156,10 +156,10 @@ If you use DDLSim-Lab in your research, please cite our project:
 }
 ```
 
-## 📜 License  
+##  License  
 DDLSim-Lab is licensed under the [MIT License](LICENSE).  
 
-## 📫 Contact  
+##  Contact  
 For questions, collaborations, or media inquiries:  
 - **Project Lead**: Kaitlyn Brishae Truby (Kaitlyn Truby)  
 - **Email**: Kaitlyn.Truby@mail2scientist.com 
